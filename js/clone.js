@@ -26,7 +26,7 @@ jQuery( function ( $ )
 		 */
 		set        : function ( $clone, index )
 		{
-			$clone.find( ':input[class|="rwmb"]' ).each( function ()
+			$clone.find( ':input[class~="rwmb"]' ).each( function ()
 			{
 				var $field = $( this );
 
@@ -97,7 +97,7 @@ jQuery( function ( $ )
 			$input;
 
 		$clone.insertAfter( $clone_last );
-		$input = $clone.find( ':input[class|="rwmb"]' );
+		$input = $clone.find( ':input[class~="rwmb"]' );
 
 		$input.each( function ()
 		{

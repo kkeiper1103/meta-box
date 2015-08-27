@@ -107,7 +107,7 @@ jQuery( function ( $ )
 				// Reset 'checked' attribute
 				$field.removeAttr( 'checked' );
 			}
-			else
+			else if( $field.attr("type") !== "hidden" )
 			{
 				// Reset value
 				$field.val( '' );
